@@ -1,0 +1,371 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>วรินธร แสงศร | Engineering Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #07111f;
+    color: #ffffff;
+    line-height: 1.7;
+}
+
+header {
+    background: #0b192b;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #183b5c;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    color: #38a8ff;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #38a8ff;
+}
+
+section {
+    padding: 80px 10%;
+}
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    background: radial-gradient(circle at right, #123b60, #07111f 65%);
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #38a8ff;
+}
+
+.hero h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.hero p {
+    color: #b5c5d8;
+    max-width: 550px;
+}
+
+.profile {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 4px solid #38a8ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #102943;
+    color: #38a8ff;
+    font-size: 65px;
+    flex-shrink: 0;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    background: #168bdb;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #38a8ff;
+}
+
+.section-title {
+    font-size: 32px;
+    color: #38a8ff;
+    margin-bottom: 30px;
+    border-left: 4px solid #38a8ff;
+    padding-left: 15px;
+}
+
+.about-text {
+    color: #c4d0df;
+    max-width: 850px;
+}
+
+.skills, .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #102238;
+    padding: 25px;
+    border: 1px solid #21496b;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    border-color: #38a8ff;
+    box-shadow: 0 5px 25px #168bdb33;
+}
+
+.card h3 {
+    color: #38a8ff;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #b5c5d8;
+    font-size: 14px;
+}
+
+.project-image {
+    width: 100%;
+    height: 150px;
+    background: #183957;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #38a8ff;
+    font-size: 40px;
+}
+
+.education {
+    background: #102238;
+    padding: 25px;
+    border-left: 4px solid #38a8ff;
+    border-radius: 5px;
+}
+
+.education p {
+    color: #b5c5d8;
+}
+
+.contact {
+    text-align: center;
+    background: #0b192b;
+}
+
+.contact p {
+    color: #b5c5d8;
+    margin: 10px;
+}
+
+.contact a {
+    color: #38a8ff;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #050c16;
+    color: #71869b;
+    font-size: 13px;
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0 6px;
+        font-size: 12px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .profile {
+        width: 180px;
+        height: 180px;
+        font-size: 45px;
+    }
+
+    section {
+        padding: 60px 7%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">W.S. | ENGINEERING</div>
+    <nav>
+        <a href="#home">หน้าหลัก</a>
+        <a href="#about">เกี่ยวกับ</a>
+        <a href="#skills">ทักษะ</a>
+        <a href="#projects">ผลงาน</a>
+        <a href="#contact">ติดต่อ</a>
+    </nav>
+</header>
+
+<!-- HOME -->
+<section class="hero" id="home">
+    <div>
+        <p>WELCOME TO MY PORTFOLIO</p>
+        <h1>วรินธร แสงศร</h1>
+        <h2>Robotics & Mechatronics Engineering</h2>
+        <p>
+            นักศึกษาวิศวกรรมหุ่นยนต์และเมคคาทรอนิกส์
+            ผู้สนใจเทคโนโลยีหุ่นยนต์ ระบบอัตโนมัติ
+            อิเล็กทรอนิกส์ และการเขียนโปรแกรมควบคุม
+        </p>
+        <a href="#projects" class="btn">ดูผลงานของผม</a>
+    </div>
+
+    <div class="profile">WS</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2 class="section-title">ABOUT ME | เกี่ยวกับผม</h2>
+    <div class="about-text">
+        <p>
+            สวัสดีครับ ผม นายวรินธร แสงศร
+            นักศึกษาสาขาวิศวกรรมหุ่นยนต์และเมคคาทรอนิกส์
+            มีความสนใจด้านการออกแบบและพัฒนาหุ่นยนต์
+            ระบบควบคุมอัตโนมัติ และเทคโนโลยีอุตสาหกรรม
+        </p>
+        <br>
+        <p>
+            ผมมีความมุ่งมั่นในการเรียนรู้เทคโนโลยีใหม่ ๆ
+            ชอบการทดลอง การแก้ไขปัญหา และการพัฒนาสิ่งประดิษฐ์
+            เพื่อนำความรู้ทางวิศวกรรมไปประยุกต์ใช้ในชีวิตจริง
+        </p>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2 class="section-title">MY SKILLS | ทักษะความสามารถ</h2>
+
+    <div class="skills">
+        <div class="card">
+            <h3>⚙ Robotics</h3>
+            <p>ความรู้พื้นฐานเกี่ยวกับหุ่นยนต์และกลไก</p>
+        </div>
+
+        <div class="card">
+            <h3>💻 Programming</h3>
+            <p>การเขียนโปรแกรมและพัฒนาระบบควบคุม</p>
+        </div>
+
+        <div class="card">
+            <h3>🔌 Electronics</h3>
+            <p>วงจรอิเล็กทรอนิกส์และเซนเซอร์</p>
+        </div>
+
+        <div class="card">
+            <h3>🤖 Automation</h3>
+            <p>ระบบอัตโนมัติและไมโครคอนโทรลเลอร์</p>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2 class="section-title">MY PROJECTS | ผลงานของผม</h2>
+
+    <div class="projects">
+
+        <div class="card">
+            <div class="project-image">🤖</div>
+            <h3>Robot Arm</h3>
+            <p>
+                ศึกษาและพัฒนาระบบแขนกลหุ่นยนต์
+                สำหรับการเคลื่อนที่และควบคุมตำแหน่ง
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="project-image">⚡</div>
+            <h3>Sensor System</h3>
+            <p>
+                ระบบตรวจจับด้วยเซนเซอร์
+                สำหรับนำข้อมูลไปประมวลผลและสั่งงาน
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="project-image">⚙</div>
+            <h3>Automation System</h3>
+            <p>
+                การพัฒนาระบบควบคุมอัตโนมัติ
+                ด้วยไมโครคอนโทรลเลอร์
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+    <h2 class="section-title">EDUCATION | ประวัติการศึกษา</h2>
+
+    <div class="education">
+        <h3>วิศวกรรมหุ่นยนต์และเมคคาทรอนิกส์</h3>
+        <p>สถานศึกษา: [ระบุชื่อสถานศึกษา]</p>
+        <p>ระดับการศึกษา: [ระบุระดับการศึกษา]</p>
+        <p>ปีการศึกษา: [ระบุปีการศึกษา]</p>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+    <h2 class="section-title">CONTACT | ติดต่อ</h2>
+
+    <p>ชื่อ: นายวรินธร แสงศร</p>
+    <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+    <p>GitHub: <a href="https://github.com/yourusername">My GitHub</a></p>
+    <p>Phone: [ระบุเบอร์โทรศัพท์]</p>
+</section>
+
+<footer>
+    © 2026 Warinthorn Saengson | Engineering Portfolio
+</footer>
+
+</body>
+</html>
